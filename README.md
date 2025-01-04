@@ -1,5 +1,31 @@
 # Infrastructure Monitoring Project
-
+project/
+├── ansible/
+│   ├── inventory/
+│   │   ├── hosts
+│   ├── playbooks/
+│   │   ├── setup_nginx.yml
+│   │   ├── setup_grafana.yml
+│   │   ├── deploy_monitoring.yml
+├── docker/
+│   ├── grafana/
+│   │   ├── Dockerfile
+│   │   ├── grafana.ini
+│   ├── nginx/
+│   │   ├── Dockerfile
+│   │   ├── nginx.conf
+├── kubernetes/
+│   ├── deployments/
+│   ├── services/
+│   ├── ingress/
+├── ci_cd/
+│   ├── .gitlab-ci.yml
+│   ├── Jenkinsfile (اختیاری)
+├── README.md
+├── scripts/
+│   ├── setup.sh
+│   ├── cleanup.sh
+└── docs/
 ## Features
 - **Ansible**: Automates the setup of Nginx and Grafana.
 - **Docker**: Containers for Grafana and Prometheus.
